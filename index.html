@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Holi 2026</title>
+
+<!-- Social Bar Ad -->
+<script src="https://pl28743927.effectivegatecpm.com/a1/21/87/a1218764c4e29e169e494177e0723c4c.js"></script>
+
+<style>
+body{
+margin:0;
+padding-top:80px;
+font-family:sans-serif;
+text-align:center;
+background:#0f0c29;
+color:white;
+overflow-x:hidden;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+h1{
+font-size:28px;
+margin-top:20px;
+color:#00f7ff;
+text-shadow:0 0 20px #00f7ff,0 0 40px #ff00c8;
+}
+
+.neon-box{
+margin:20px auto;
+padding:20px;
+width:90%;
+max-width:350px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+box-shadow:0 0 20px #00f7ff;
+}
+
+input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+margin-top:10px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:14px;
+margin-top:15px;
+border:none;
+border-radius:8px;
+background:linear-gradient(45deg,#00f7ff,#ff00c8);
+color:white;
+font-size:18px;
+cursor:pointer;
+box-shadow:0 0 15px #ff00c8;
+}
+
+button:active{
+transform:scale(0.98);
+}
+
+#ad1{
+margin-top:20px;
+}
+
+.share-btn{
+margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="firework"></canvas>
+
+<h1 id="wish">🌈 Happy Holi 2026 🌈</h1>
+
+<div class="neon-box">
+
+<input type="text" id="name" placeholder="Apna Naam Likho">
+
+<button onclick="generateWish()">🎉 Generate & Share</button>
+
+<div id="shareArea"></div>
+
+</div>
+
+<!-- Banner Ad -->
+<div id="ad1">
+<script>
+  atOptions = {
+    'key' : 'fc197ad9c7c3213e06e1baeee7861024',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/fc197ad9c7c3213e06e1baeee7861024/invoke.js"></script>
+</div>
+
+<!-- Native Banner -->
+<script async data-cfasync="false" src="https://pl28743930.effectivegatecpm.com/16a7b68d6fbb9bede8be362f909e17d4/invoke.js"></script>
+<div id="container-16a7b68d6fbb9bede8be362f909e17d4"></div>
+
+<audio id="music" loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+
+<script>
+// 🎆 Firework Effect
+var canvas=document.getElementById("firework");
+var ctx=canvas.getContext("2d");
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+var particles=[];
+function createFirework(){
+for(let i=0;i<150;i++){
+particles.push({
+x:canvas.width/2,
+y:canvas.height/2,
+dx:(Math.random()-0.5)*8,
+dy:(Math.random()-0.5)*8,
+color:"hsl("+Math.random()*360+",100%,50%)",
+life:100
+});
+}
+}
+
+function animate(){
+ctx.fillStyle="rgba(15,12,41,0.2)";
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+particles.forEach((p,index)=>{
+ctx.fillStyle=p.color;
+ctx.fillRect(p.x,p.y,4,4);
+p.x+=p.dx;
+p.y+=p.dy;
+p.life--;
+if(p.life<=0) particles.splice(index,1);
+});
+
+requestAnimationFrame(animate);
+}
+animate();
+
+// 🎉 Generate Wish
+function generateWish(){
+var name=document.getElementById("name").value;
+if(name==""){
+alert("Naam likho pehle!");
+return;
+}
+
+document.getElementById("music").play();
+createFirework();
+
+var url=window.location.href.split("?")[0]+"?name="+name;
+var msg=name+" ne aapko Holi ki badhai bheji 🌈🔥 Dekho 👉 "+url;
+var wa="https://wa.me/?text="+encodeURIComponent(msg);
+
+document.getElementById("shareArea").innerHTML=
+"<div class='share-btn'><a href='"+wa+"' target='_blank'><button>Share on WhatsApp</button></a></div>";
+}
+
+// 🎯 Name From URL
+window.onload=function(){
+var params=new URLSearchParams(window.location.search);
+var name=params.get("name");
+if(name){
+document.getElementById("wish").innerHTML=
+"🌈 Happy Holi 🌈<br>"+name+" Ki Taraf Se 🔥";
+createFirework();
+}
+}
+</script>
+
+<!-- Popunder Ad -->
+<script src="https://pl28721831.effectivegatecpm.com/1c/b1/38/1cb138209d61c0fae7baad1c3b2c9d7b.js"></script>
+
+</body>
+</html>
